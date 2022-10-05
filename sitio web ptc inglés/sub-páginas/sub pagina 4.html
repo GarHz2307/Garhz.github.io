@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="icon" href="../imagenes/Logos/Logo RGS-07.png">
+  <title>Help and Support</title>
+  <link rel="stylesheet" href="../Css's/sub pagina 4.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" class="enlace">
+        <img src="../Imagenes/Logos/Logo RGS-05.png" alt="" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="derecha">
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <!--Aquí empieza la programación del menú del idioma-->
+          <div class="btn-group">
+            <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>Language
+            </button>
+            <ul  class="dropdown-menu">
+              <li class="espacio" class="nav-item">
+                <a class="nav-link" href="../../Sitio web ptc español/Sub-Páginas/sub pagina 4.html">
+                  <img src="../Imagenes/Flags-02.png" alt="" class="bandera1" > Spanish
+                </a>
+              </li>
+              <li class="espacio" class="nav-item">
+                <a class="nav-link" href="">
+                  <img src="../Imagenes/Flags-01.png" alt="" class="bandera1" > English
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Aquí acaba-->
+          <li>
+            <a class="nav-link" class="active" href="../Index.html">
+              Main Page
+            </a>
+          </li>
+          /
+          <li class="colormenu" class="nav-item">
+            <a class="nav-link" href="sub pagina 1.html">
+              Licence
+            </a>
+          </li>
+          /
+          <li class="colormenu" class="nav-item">
+            <a class="nav-link" href="Sub pagina 2.html">
+              User Manual
+            </a>
+          </li>
+          /
+          <li class="colormenu" class="nav-item">
+            <a class="nav-link" href="Sub pagina 3.html">
+              About Us
+            </a>
+          </li>
+          /
+          <li class="colormenu" class="nav-item">
+            <a class="nav-link" href="sub pagina 4.html">
+              FAQS
+            </a>
+          </li>
+          /
+          <li class="colormenu" class="nav-item">
+            <a class="nav-link" href="sub pagina 5.html">
+              Downloads
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div id="general">
+
+      <select class="form-select" id="seleccionpreguntas" aria-label="Default select example">
+        <option selected value="0" class="contenidos">Select your question</option>
+
+        <option value="1" class="contenidos">Can the system adapt to different screen size?</option>
+        <option value="2" class="contenidos">Will the cameras be on all time?</option>
+        <option value="3" class="contenidos">Could the cameras record?
+        </option>
+        <option value="4" class="contenidos">Will the system continuing function?</option>
+        <option value="5" class="contenidos">What happen when it's over my suscription to the system?</option>
+        <option value="6" class="contenidos"> How do I cancel my subscription? </option>
+        <input type="button" value="contestar" onclick="contestar1();">
+
+      </select>
+      If your question doesn't get answer on the frequent questions section, you could contact us via Whatsapp
+      <a href="tel: 78355374" class="linkNum" class="contenidos">
+        Talk to support
+      </a>
+      <div>
+        <H3 id="R" class="contenidos">Answer</H3>
+        <b>
+          <p id="optionAyuda"> </p>
+        </b>
+      </div>
+      <h1 class="titulos">Frequently Asked Questions</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              What happen if I don't remember the password?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong class="contenidos">  What happen if I don't remember the password?</strong>
+              In this case we recommend that you try our multiple recovery methods
+               password, if you still do not receive an answer we can only recommend that you contact
+               maintenance<a href="tel: 78355374" class="linkNum">click here</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="contenidos">
+              Can the system be use in any computer?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" class="contenidos">
+              <strong class="contenidos">Can the system be use in any computer?</strong>
+              No, it has specific requirements that can be found on <a
+                href="sub pagina 5.html" class="linkNum">help</a> from the web page.
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="contenidos">
+              Can the system be use on more than one computer?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" class="contenidos">
+              <strong class="contenidos">Can the system be use on more than one computer?</strong>
+              No, the system has a database which is not stored in the cloud, it will only be local to your
+               computer.
+
+            </div>
+          </div>
+          <hr>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFor">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor" class="contenidos">
+                How can be eliminated an account?
+              </button>
+            </h2>
+            <div id="collapseFor" class="accordion-collapse collapse" aria-labelledby="headingFor"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong class="contenidos">How can be eliminated an account?</strong>
+                Within the system there is an option in the administrator user which will be used so that they can
+                delete accounts.
+              </div>
+            </div>
+            <hr>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="contenidos">
+                 Read the terms and conditions
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body" class="contenidos">
+                  <strong class="contenidos">Read the terms and conditions </strong>
+                  <details>
+                    <summary>More Information</summary>
+                    Residential Guardian System, is a paid system, so the use of it does not contain
+                    announcement
+                    or collect personal information from you as a user, we receive income from your
+                    subscription
+                    to the system, so our privacy policies are oriented towards another sector
+
+                    Some of the topics that you could include in the privacy policy are:
+                    <br>
+                    <b>¿What type of information it gather?</b> Information like your ubication.
+                    <br>
+                    <b>How do they use this information? </b> To give the necessary support.
+                    <br>
+                    <b>Will the information be shared with third parties?</b> Well, we share it without intentions of
+                    make a profit, alone
+                    to make support easier and more accessible to you as a user.
+                    <br>
+                    <b>Can customers review or delete the information you collect about them? </b> Of course, 
+                    we recommend that when your subscription
+                    finish contact our email <a href="https//gmail.com" class="linkNum">click
+                      here</a> to ask for the delete of information
+                    <br>
+
+                    <b>How can customers contact you to answer their questions?</b>
+                    By our contact <a href="https//gmail.com" class="linkNum">email</a> and our <a href="tel: 78355374" class="linkNum">number</a>, we attend from 7 AM to 5 PM.
+                  </details>
+                </div>
+              </div>
+            </div>
+
+            <p> </p>
+            <br>
+            <br>
+            <p></p>
+
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <spam>
+            <p class="text-center" style="color:white ;">©Residential guardian
+              system.</p>
+          </spam>
+          <div class="cont-img">
+            <center><img src="../Imagenes/Footer/Face.png" alt="">
+              <img src="../Imagenes/Footer/Insta.png" alt="">
+              <img src="../Imagenes/Footer/Twitter.png" alt="">
+              <img src="../Imagenes/Footer/Wha.png" alt="">
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+
+  <script type="Text/Javascript">
+    function contestar1() {
+      if(document.getElementById("seleccionpreguntas").value == "0")
+      {
+        
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= " ";
+    }
+      if(document.getElementById("seleccionpreguntas").value == "1")
+      {
+        
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= "R// El sistema cuenta con table layout para ajustar la pantalla al tamaño que el usuario desee.";
+    }
+    if(document.getElementById("seleccionpreguntas").value == "2")
+      {
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= "R// Sí, las cámaras permanecerán encendidas todo el tiempo.";
+    
+      }
+      if(document.getElementById("seleccionpreguntas").value == "3")
+      {
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= "R// No, las cámaras serán de uso manual, es decir el vigilante manipulara las cámaras manualmente.";
+      }
+      if(document.getElementById("seleccionpreguntas").value == "4")
+      {
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= "R// El sistema seguirá funcionando para mantener la seguridad de su residencia aun estando fuera del país.";
+      }
+      if(document.getElementById("seleccionpreguntas").value == "5")
+      {
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= "R// El usuario tendrá la opción de seguir con su suscripción o cancelar su suscripción.";
+      }
+      if(document.getElementById("seleccionpreguntas").value == "6")
+      {
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= "R// Deberá contactarnos para poder ayudarle.";
+      }
+
+  }
+
+</script>
+
+<script src="../js/bootstrap.bundle.min.js">
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>

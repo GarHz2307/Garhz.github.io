@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="icon" href="../imagenes/Logos/Logo RGS-07.png">
+  <title>Ayuda y soporte</title>
+  <link rel="stylesheet" href="../Css's/sub pagina 4.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" class="enlace">
+        <img src="../Imagenes/Logos/Logo RGS-05.png" alt="" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="derecha">
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <!--Aquí empieza la programación del menú del idioma-->
+          <div class="btn-group">
+            <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>Idioma
+            </button>
+            <ul  class="dropdown-menu">
+              <li class="espacio" class="nav-item">
+                <a class="nav-link" href="">
+                  <img src="../Imagenes/Flags-02.png" alt="" class="bandera1" > Español
+                </a>
+              </li>
+              <li class="espacio" class="nav-item">
+                <a class="nav-link" href="../../Sitio web ptc Inglés/Sub-Páginas/sub pagina 4.html">
+                  <img src="../Imagenes/Flags-01.png" alt="" class="bandera1" > Inglés
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Aquí acaba-->
+          <li>
+            <a class="nav-link" class="active" href="../../Index.html">
+              Página principal
+            </a>
+          </li>
+          /
+          <li class="colormenu" class="nav-item">
+            <a class="nav-link" href="sub pagina 1.html">
+              Licencia
+            </a>
+          </li>
+          /
+          <li class="colormenu" class="nav-item">
+            <a class="nav-link" href="Sub pagina 2.html">
+              Manual de uso
+            </a>
+          </li>
+          /
+          <li class="colormenu" class="nav-item">
+            <a class="nav-link" href="Sub pagina 3.html">
+              Acerca de
+            </a>
+          </li>
+          /
+          <li class="colormenu" class="nav-item">
+            <a class="nav-link" href="sub pagina 4.html">
+              Preguntas Frecuentes
+            </a>
+          </li>
+          /
+          <li class="colormenu" class="nav-item">
+            <a class="nav-link" href="sub pagina 5.html">
+              Descargar
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section>
+    <div id="general">
+
+      <select class="form-select" id="seleccionpreguntas" aria-label="Default select example">
+        <option selected value="0" class="contenidos">Selecciona tu consulta</option>
+
+        <option value="1" class="contenidos">¿El sistema se puede ajustar el tamaño de la ventana?</option>
+        <option value="2" class="contenidos">¿Las cámaras del sistema pueden estar encendidas todo el tiempo?</option>
+        <option value="3" class="contenidos">¿Las cámaras del sistema tendrán la opción de grabar automáticamente?
+        </option>
+        <option value="4" class="contenidos">¿El sistema seguirá funcionando si viajo al extranjero?</option>
+        <option value="5" class="contenidos">¿Qué pasa cuando finaliza mi suscripción del programa?</option>
+        <option value="6" class="contenidos"> ¿Cómo cancelo mi suscripción? </option>
+        <input type="button" value="contestar" onclick="contestar1();">
+
+      </select>
+      Si su pregunta no es respondida en las opciones multiples, le invitamos a que nos contacte a nuestro WhatsApp
+      personal
+      <a href="tel: 78355374" class="linkNum" class="contenidos">
+        Escribe a soporte
+      </a>
+      <div>
+        <H3 id="R" class="contenidos">Respuesta</H3>
+        <b>
+          <p id="optionAyuda"> </p>
+        </b>
+      </div>
+      <h1 class="titulos">Preguntas frecuentes</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              ¿Qué ocurré si no recuerdo mi contraseña?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong class="contenidos"> ¿Qué ocurré si no recuerdo mi contraseña? </strong>
+              Pues en este caso recomendamos que intente con nuestros multiples metodos de recuperación
+              de contraseña, si aún así no recibe una respuesta solo podemos recomendar de que se ponga en contacto con
+              mantenimiento <a href="tel: 78355374" class="linkNum">click aquí</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="contenidos">
+              ¿El sistema se puede instalar y usar en cualquier tipo de computadoras?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" class="contenidos">
+              <strong class="contenidos">¿El sistema se puede instalar y usar en cualquier tipo de computadoras?</strong>
+              No, tiene ciertas especificaciones que se tienen que cumplir, las cuales estan en el apartado de <a
+                href="sub pagina 5.html" class="linkNum">ayuda</a> de la pagina web.
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="contenidos">
+              ¿El sistema se puede usar en 2 o mas computadoras al mismo tiempo?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" class="contenidos">
+              <strong class="contenidos">¿El sistema se puede usar en 2 o mas computadoras al mismo tiempo?</strong>
+              No, el sistema lleva una base de datos la cual no esta almacenada en la nube, sera solamente local en su
+              computadora.
+
+            </div>
+          </div>
+          <hr>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFor">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor" class="contenidos">
+                ¿Como puedo eliminar una cuenta creada?
+              </button>
+            </h2>
+            <div id="collapseFor" class="accordion-collapse collapse" aria-labelledby="headingFor"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong class="contenidos">¿Como puedo eliminar una cuenta creada?</strong>
+                Dentro del sistema existe una opción en el usuario de administrador la cual servirá para que se puedan
+                eliminar cuentas.
+
+              </div>
+            </div>
+            <hr>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="contenidos">
+                  Quiero leer los terminos y condiciones
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body" class="contenidos">
+                  <strong class="contenidos">Quiero leer los terminos y condiciones </strong>
+                  <details>
+                    <summary>Más información</summary>
+                    Residential Guardian System, es un sistema de paga, por lo que el uso de este mismo no contiene
+                    anuncion
+                    ni recopila información personal de usted como usuario, nosotros recibimos ingresos a partir de su
+                    suscripción
+                    al sistema, por lo que nuestras politicas de privacidad van orientadas hacia otro sector
+
+                    Algunos de los temas que podrías incluir en la política de privacidad son:
+                    <br>
+                    <b>¿Qué tipo de información recopilas?</b> Información como su ubicación.
+                    <br>
+                    <b>¿Cómo utilizas esa información? </b> Para brindar soporte en caso de que sea necesario.
+                    <br>
+                    <b>¿Compartes dicha información con afiliados o terceros?</b> Pues la compartimos sin intenciones de
+                    lucrarnos, solo
+                    para que el soporte sea más fácil y más accesible a usted como usuario.
+                    <br>
+                    <b>¿Los clientes pueden revisar o eliminar la información que recopilas sobre ellos? </b> Claro que
+                    si, recomendamos que cuando su suscripción
+                    acabe se ponga en contacto a nuestro correo <a href="https//gmail.com" class="linkNum">click
+                      aquí</a> para pedir que se borre dicha información
+                    <br>
+
+                    <b>¿Cómo pueden ponerse en contacto contigo los clientes para resolver sus dudas?</b>
+                    Por medio de nuestro <a href="https//gmail.com" class="linkNum">correo</a> y nuestro <a href="tel: 78355374" class="linkNum">número</a> telefonico, atendemos de 7:00 am a 5:00 pm Hora Salvadoreña
+                    
+                  </details>
+                </div>
+              </div>
+            </div>
+
+            <p> </p>
+            <br>
+            <br>
+            <p></p>
+
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <spam>
+            <p class="text-center" style="color:white ;">©Residential guardian
+              system.</p>
+          </spam>
+          <div class="cont-img">
+            <center><img src="../Imagenes/Footer/Face.png" alt="">
+              <img src="../Imagenes/Footer/Insta.png" alt="">
+              <img src="../Imagenes/Footer/Twitter.png" alt="">
+              <img src="../Imagenes/Footer/Wha.png" alt="">
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script type="Text/Javascript">
+    function contestar1() {
+      if(document.getElementById("seleccionpreguntas").value == "0")
+      {
+        
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= " ";
+    }
+      if(document.getElementById("seleccionpreguntas").value == "1")
+      {
+        
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= "R// El sistema cuenta con table layout para ajustar la pantalla al tamaño que el usuario desee.";
+    }
+    if(document.getElementById("seleccionpreguntas").value == "2")
+      {
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= "R// Sí, las cámaras permanecerán encendidas todo el tiempo.";
+    
+      }
+      if(document.getElementById("seleccionpreguntas").value == "3")
+      {
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= "R// No, las cámaras serán de uso manual, es decir el vigilante manipulara las cámaras manualmente.";
+      }
+      if(document.getElementById("seleccionpreguntas").value == "4")
+      {
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= "R// El sistema seguirá funcionando para mantener la seguridad de su residencia aun estando fuera del país.";
+      }
+      if(document.getElementById("seleccionpreguntas").value == "5")
+      {
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= "R// El usuario tendrá la opción de seguir con su suscripción o cancelar su suscripción.";
+      }
+      if(document.getElementById("seleccionpreguntas").value == "6")
+      {
+        var elemento = document.getElementById("optionAyuda");
+    elemento.innerText= "R// Deberá contactarnos para poder ayudarle.";
+      }
+
+  }
+
+</script>
+
+<script src="../js/bootstrap.bundle.min.js">
+
+</script>
+</body>
+
+</html>

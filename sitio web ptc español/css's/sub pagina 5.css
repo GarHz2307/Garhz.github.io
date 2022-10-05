@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 3em;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    margin-top: -5%;
+    margin-left: 15%;
+    height: 60px;
+    width: 110px;
+}
+.titulos
+{
+ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contenidos
+{
+font-family: Montserrat;
+font-size: 16px;
+}
+.cont-min{
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    position: relative;
+    top: 20px;
+}
+/*copiar*/
+.bandera1 {
+    margin-top: -5%;
+    margin-right: 15%;
+    height: 20px;
+    width: 23px;
+}
+.dropdown-menu{
+    background: #000000;
+}
+
+li a.active,
+li a:hover {
+    text-decoration: none;
+    background: #5890ba;
+    transition: 0.5s;
+}
+
+/*copiar*/
+.navbar-toggler {
+    color: white;
+    background-color: white;
+}
+
+/*copiar*/
+.colormenu {
+    color: white;
+    border-radius: 4%;
+    animation: none;
+}
+
+/*copiar*/
+.nav-link {
+    color: white
+}
+
+/*copiar*/
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    border-radius: 3%;
+}
+
+/*copiar*/
+.derecha {
+    margin-right: 1%
+}
+/*Copiar*/
+.container-fluid {
+    background-color: black;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.paladerecha{
+    margin-left: 80%;
+}
+
+/* aqui comienza el nuevo footer*/
+/* es diferente al del index, pero el index es un caso especial*/
+footer{
+    position: absolute;
+    bottom: 0 ;
+    background-color: #000000;
+    width: 100%;
+    padding: 0;
+}
+
+footer img {
+    padding: 6px;
+    width: 50px;
+    height: 48px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+footer img:hover{
+    transform: translateY(-10px);
+}
+
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+       }
+   
+    .d-grid gap-2{
+        margin: 10%;
+    }
+    .derecha {
+        margin-right: 1%
+    }
+   
+}
+@media (max-width: 856px){
+ .checkbtn{
+    display: block ;
+ }
+ .d-grid gap-2{
+    margin: 10%;
+}
+.paladerecha{
+    margin-left: 60%;
+}
+ 
+  #check:checked ~ul{
+    left: 0;
+  }
+  h1{
+    color:rgb(247, 241, 241);
+  }
+  h2{
+    color: white;
+  }
+  .container-xl
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    } 
+    .derecha {
+        margin-right: 1%
+    }
+}
+
+.h1,h1{
+    color: rgb(0, 0, 0);
+    
+}
+.d-grid gap-2{
+    margin: 10%;
+}
+
+@media (max-width: 506px)
+{
+.paladerecha{
+    margin-left: 20%;
+}
+}
+@media (min-width: 1023px)
+{
+.paladerecha{
+    margin-left: 65%;
+}
+}

@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 3em;
+}
+
+
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    margin-top: -5%;
+    margin-left: 15%;
+    height: 60px;
+    width: 110px;
+}
+.titulos
+{
+ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contenidos
+{
+font-family: Montserrat;
+font-size: 16px;
+}
+
+
+.cont-min {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+/*copiar*/
+.bandera1 {
+    margin-top: -5%;
+    margin-right: 15%;
+    height: 20px;
+    width: 23px;
+}
+.dropdown-menu{
+    background: #000000;
+}
+li a.active,
+li a:hover {
+    text-decoration: none;
+    background: #5890ba;
+    transition: 0.5s;
+}
+
+/*copiar*/
+.navbar-toggler {
+    color: white;
+    background-color: white;
+}
+
+/*copiar*/
+.colormenu {
+    color: white;
+    border-radius: 4%;
+    animation: none;
+}
+
+/*copiar*/
+.nav-link {
+    color: white
+}
+
+/*copiar*/
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    border-radius: 3%;
+}
+
+/*copiar*/
+.derecha {
+    margin-right: 1%
+}
+/*Copiar*/
+.container-fluid {
+    background-color: black;
+}
+/*Copiar*/
+.cont-text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cont-text21 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.container__cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card:hover .cover__card img {
+    transform: scale(1.1);
+}
+
+.cover__card {
+    width: 100%;
+    height: 140px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.cover__card img {
+    width: 110%;
+    transition: all 300ms;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.card p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.5px;
+}
+
+.card hr {
+    margin-top: 30px;
+    border: none;
+    height: 0.2px;
+    background: #41414138;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.footer__card {
+    margin-top: 10px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.footer__card h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+h3,
+p {
+    margin-top: 1%;
+    color: rgb(0, 0, 0);
+}
+
+
+/* aqui comienza el nuevo footer*/
+/* es diferente al del index, pero el index es un caso especial*/
+footer{
+    position: absolute;
+    bottom: 0 ;
+    background-color: #000000;
+    width: 100%;
+    padding: 0;
+}
+
+footer img {
+    padding: 6px;
+    width: 50px;
+    height: 48px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+footer img:hover{
+    transform: translateY(-10px);
+}
+
+
+/*.cont-img {
+    position: relative;
+    left: 42%;
+}*/
+
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+       }
+
+
+    /* copiar*/
+}
+
+@media (max-width: 856px) {
+    .checkbtn {
+        display: block;
+    }
+/*ESTE ul cambio */
+    
+    
+    #check:checked~ul {
+        left: 0;
+    }
+
+    /*footer .cont-img{
+        position: relative;
+        left: 35%;
+    }*/
+    .derecha {
+        margin-right: 1%
+    }
+
+    /* copiar*/
+}
+@media  screen and (max-width:500px){
+   /* footer .cont-img{
+        position: relative;
+        left: 20%;
+    }*/
+    .derecha {
+        margin-right: 1%
+    }
+
+    /* copiar*/
+}
+
+@media screen and (max-width:1200px) {
+    .container__cards {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+}

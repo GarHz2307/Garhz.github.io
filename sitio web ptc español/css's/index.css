@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    background: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 3em;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    margin-top: -5%;
+    margin-left: 15%;
+    height: 60px;
+    width: 110px;
+}
+
+.titulos {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contenidos {
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+.cont-min {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+/*copiar*/
+.bandera1 {
+    margin-top: -5%;
+    margin-right: 15%;
+    height: 20px;
+    width: 23px;
+}
+.dropdown-menu{
+    background: #000000;
+    }
+li a.active,
+li a:hover {
+    text-decoration: none;
+    background: #5890ba;
+    transition: 0.5s;
+}
+
+/*copiar*/
+.navbar-toggler {
+    color: white;
+    background-color: white;
+}
+
+/*copiar*/
+.colormenu {
+    color: white;
+    border-radius: 4%;
+    animation: none;
+}
+
+/*copiar*/
+.nav-link {
+    color: white
+}
+
+/*copiar*/
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    border-radius: 3%;
+}
+
+/*copiar*/
+.derecha {
+    margin-right: 1%
+}
+
+/*copiar*/
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.container-fluid {
+    background-color: black;
+}
+
+h2 {
+    margin-top: 2%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.cont-video {
+    margin: 4px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sm {
+    margin-top: 25px;
+    border-color: #000000;
+    border-radius: 20px;
+    background-color: #e2d9d99a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 57px;
+    color: #ffffff;
+    position: relative;
+    min-height: 20vh;
+    padding-bottom: 3em;
+}
+.colorsito
+{
+    border-color: #0082e6;
+}
+p {
+    margin: 2%;
+    color: rgb(0, 0, 0);
+}
+
+.p1 {
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* footer img */
+footer img {
+    padding: 6px;
+    width: 50px;
+    height: 48px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+
+.cont-img {
+    position: relative;
+    left: 12px;
+}
+
+footer img:hover {
+    transform: translateY(-10px);
+}
+
+/*copiar*/
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*copiar nuevo footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 1px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    padding: 0;
+}
+
+
+
+
+.cont-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 856px) {
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .derecha {
+        margin-right: 1%
+    }
+
+    /* copiar*/
+}
+
+@media (max-width: 1050px) {
+    video {
+        position: relative;
+        bottom: 40px;
+    }
+
+    .derecha {
+        margin-right: 1%
+    }
+
+    /* copiar*/
+
+    .container-sm {
+        position: revert;
+        top: 80px;
+    }
+
+    .cont-video video {
+        width: 400px;
+        height: auto;
+    }
+}
+
+
+
+
+@media (max-width:700px) {
+    .cont-video video {
+        width: 300px;
+        height: auto;
+    }
+
+    .derecha {
+        margin-right: 1%
+    }
+
+    /* copiar*/
+
+}
